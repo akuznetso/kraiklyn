@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap justify-content-left">
+  {{ range .Site.Params.social.list }}
+  <div style="height:45px; width:45px;  margin-top:1em">
+    <a href="{{ .url }}">
+      <i class="{{ .class }} {{ .icon }} fa-2x"></i>
+    </a>
+  </div>
+  {{ end }}
+</div>

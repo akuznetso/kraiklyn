@@ -7,7 +7,7 @@
                     {{ partial "menu_page_list.html" . }}
                 {{ end }}
             {{ end }}
-            {{ range .Pages.ByWeight }}
+            {{ range where .Pages.ByWeight ".Params.type" "!=" "publication"}}
                 <li><a href="#{{ .Params.anchor }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>

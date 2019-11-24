@@ -5,12 +5,6 @@
             {{ partial "section_list.html" . }}
         {{ end }}
     {{ end }}
-            {{ range where .Pages.ByWeight "Params.type" "!=" "publication"}}
-                {{ partial "section.html" . }}
-            {{ end }}
-            {{ range where .Pages.ByDate "Params.type" "=" "publication"}}
-                {{ partial "publication.html" . }}
-            {{ end }}
 {{ else }}
     {{ partial "section.html" . }}
 {{ end }}

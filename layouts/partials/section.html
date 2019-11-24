@@ -1,8 +1,14 @@
 <section class="page" id="{{ .Params.anchor }}">
-    <h1>
+    <h3>
         <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
-    </h1>
+    </h3>
     <div class="content">
         {{ .Content }}
+        {{ range (where .Pages "Params.type" "=" "publication").ByDate.Reverse}}
+                {{ partial "publication.html" . }}
+        {{ end }}
+        {{ range (where .Pages "Params.type" "=" "newsitem").ByDate.Reverse}}
+                {{ partial "news.html" . }}
+        {{ end }}
     </div>
 </section>

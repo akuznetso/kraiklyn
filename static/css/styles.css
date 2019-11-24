@@ -92,6 +92,9 @@ html, body {
   .sidebar .contactsbar {
     justify-content: left;
   } 
+  .sidebar ul li { 
+    padding-left: 2em;
+  }
 }
 
 .site-title {
@@ -116,7 +119,7 @@ html, body {
 
 .sidebar ul li {
   list-style: none;
-  padding-left: 2em;
+/*  padding-left: 2em; */
 }
 
 nav {
@@ -125,6 +128,7 @@ nav {
 
 .sidebar .navigation {
   flex: 1 0 auto;
+  justify-content: center;
 }
 
 .sidebar .version {

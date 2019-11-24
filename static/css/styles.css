@@ -39,6 +39,10 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+.sidebar .contactsbar {
+  justify-content: center;
+} 
+
 .sidebar.sidebar-default {
   background-color: #363636;
 }
@@ -78,8 +82,16 @@ html, body {
     left: 0;
     bottom: 0;
     width: 19rem;
-    text-align: left;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
   }
+}
+
+@media (min-width: 48em) {
+  .sidebar .contactsbar {
+    justify-content: left;
+  } 
 }
 
 .site-title {

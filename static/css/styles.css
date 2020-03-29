@@ -227,6 +227,7 @@ nav {
 /* Section of the page */
 section.page {
   margin-bottom: 3em;
+  max-width: 64em;
 }
 
 section.page h3 {

@@ -1,9 +1,9 @@
-<div style="margin-top: 30px">"{{ .Title }}",&nbsp;&nbsp;&nbsp;{{ .Params.Author}}, {{.Params.Conference}}, {{.Params.Paperpubdate}}
+<div style="margin-top: 30px"><b>{{ .Title }}</b><br/><font color="grey">{{ .Params.Author}}</font><br/>{{.Params.Conference}}, {{.Params.Paperpubdate}}
 
 <br>
 {{ if isset .Params "pdf" }} [<a href="{{ .Params.Pdf  }}">PDF</a>] {{ end }}
 {{ if isset .Params "link" }} [<a href="{{ .Params.Link  }}">Link</a>] {{ end }}
-{{ if isset .Params "webpage" }} [<a href="{{ .Params.Webpage  }}">Web-page</a>] {{ end }}
+{{ if isset .Params "webpage" }} [<a href="{{ .Params.Webpage  }}">Web</a>] {{ end }}
 {{ if isset .Params "code" }} [<a href="{{ .Params.Code  }}">Code</a>] {{ end }}
 {{ if isset .Params "arxiv" }} [<a href="{{ .Params.Arxiv  }}">ArXiV</a>] {{ end }}
 </div>

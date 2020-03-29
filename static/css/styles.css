@@ -10,9 +10,9 @@ html, body {
   }
 }
 
-@media (min-width: 58em) {
+@media (min-width: 64em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -25,8 +25,41 @@ html, body {
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 22rem;
+    margin-left: 32rem;
     margin-right: 3rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 19rem;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar .contactsbar {
+    justify-content: left;
+  } 
+  .sidebar ul li { 
+    padding-left: 2em;
+  }
+}
+
+
+@media (min-width: 64em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 29rem;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -74,27 +107,6 @@ html, body {
   background-image: url("../images/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 19rem;
-    text-align: left; 
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 48em) {
-  .sidebar .contactsbar {
-    justify-content: left;
-  } 
-  .sidebar ul li { 
-    padding-left: 2em;
-  }
 }
 
 .site-title {
@@ -208,10 +220,11 @@ section.page h3 {
   border-left: 3px solid #363636;
   padding-left: 0.5em;
   margin-bottom: 0;
+  margin-left: 0.5em;
 }
 
 section.page .content {
-  margin-left: 0.5em;
+  margin-left: 2em;
   margin-top: 2em;
 }
 

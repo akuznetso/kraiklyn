@@ -18,6 +18,7 @@ html, body {
 
 @media (min-width: 48em) {
   .content {
+    margin-top: 1em;
     margin-left: 21rem;
     margin-right: 2rem;
   }
@@ -25,6 +26,7 @@ html, body {
 
 @media (min-width: 64em) {
   .content {
+    margin-top: 1em;
     margin-left: 32rem;
     margin-right: 3rem;
   }
@@ -44,9 +46,6 @@ html, body {
   .sidebar .contactsbar {
     justify-content: left;
   } 
-  .sidebar ul li { 
-    padding-left: 2em;
-  }
 }
 
 
@@ -63,15 +62,20 @@ html, body {
   }
 }
 
-/* Sidebar */
+/* Sidebar default */
 .sidebar {
   overflow: auto;
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 10rem 1rem 0rem 0rem;
   color: white;
   display: flex;
   flex-direction: column;
 }
+
+.content {
+  margin-top:1em;
+}
+
 .sidebar .contactsbar {
   justify-content: center;
 } 
@@ -131,11 +135,11 @@ html, body {
 
 .sidebar ul li {
   list-style: none;
-/*  padding-left: 2em; */
+  padding-left: 0em; 
 }
 
 nav {
-  margin: 1em 0 1em 0;
+  margin: 1em 0em 1em 0em;
 }
 
 .sidebar .navigation {
@@ -156,8 +160,17 @@ nav {
 }
 
 .sidebar nav.external {
-  font-size: 80%;
+  font-size: 120%;
 }
+
+.sidebar nav.internal {
+  font-size: 150%;
+}
+
+.sidebar .internal-title {
+  font-size: 200%;
+}
+
 
 /* Blocks */
 .block {
